@@ -1,0 +1,30 @@
+﻿@model List<CoustomApp.Models.Customer>;
+
+<div class="text-center">
+    <h1 class="display-4">Customer List</h1>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var customers in Model)
+            {
+        <tr>
+            <th>@customers.id</th>
+            <th>@customers.Name</th>
+            <th>@customers.Age</th>
+            <th>@customers.Address</th>
+            <th>@customers.Phone</th>
+        </tr>
+            }
+    </tbody>
+</table>
